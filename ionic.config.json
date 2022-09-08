@@ -1,0 +1,7 @@
+{
+  "name": "Target Clearning",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
