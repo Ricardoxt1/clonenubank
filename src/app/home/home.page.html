@@ -1,25 +1,25 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Inbox
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-header>
+  <style>
+    h2 {
+      font-family: IM FELL DW Pica SC;
+      font-size: 15px;
+      font-weight: 400;
+      line-height: 10px;
+      letter-spacing: 0em;
+      text-align: left;
+    }
 
-<ion-content [fullscreen]="true">
-  <ion-refresher slot="fixed" (ionRefresh)="refresh($event)">
-    <ion-refresher-content></ion-refresher-content>
-  </ion-refresher>
+    .form {
+      text-align: center;
+      background: #D9D9D9;
+    }
+
+  </style>
+
+  <ion-content>
+    <div id="container">
+      <strong></strong>
+      <p></p>
+  </ion-content>
+
   
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">
-        Inbox
-      </ion-title>
-    </ion-toolbar>
-  </ion-header>
-  
-  <ion-list>
-    <app-message *ngFor="let message of getMessages()" [message]="message"></app-message>
-  </ion-list>
-</ion-content>
